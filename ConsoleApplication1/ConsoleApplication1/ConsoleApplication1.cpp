@@ -2,6 +2,7 @@
 #include <string>
 #include "Node.h"
 #include "list.h"
+#include "ouble.h"
 
 using namespace std;
 
