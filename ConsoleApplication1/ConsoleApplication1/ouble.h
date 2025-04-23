@@ -23,7 +23,7 @@ public:
             tail = new_node;
         }
     }
-
+ 
     void push_front(Type value) {
         auto new_node = make_shared<Node<Type>>(value);
         if (!head) {
