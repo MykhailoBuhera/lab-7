@@ -56,23 +56,8 @@ public:
             cout << "Queue is empty" << endl;
             return;
         }
-        cout << "1st element in the queue: " << front->data << endl;
+        cout << "1st element in the queue" << front->data << endl;
     }
 
-    // Виводить всі елементи черги
-    void display() const {
-        if (!front) {
-            cout << "Queue is empty" << endl;
-            return;
-        }
-
-        auto current = front;
-        do {
-            cout << current->data << " ";
-            current = current->next;
-        } while (current != front);  // Перевірка на кінець черги (кругова черга)
-        cout << endl;
-    }
 };
 
-};
