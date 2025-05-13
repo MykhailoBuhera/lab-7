@@ -28,7 +28,7 @@ class queue
                 cout << "Queue is empty" << endl;
                 return;
             }
-            data = data->next;
+            data = data->next; //shared ptr sam vudaluti kolu zanylutsa i cherez ce ne byde vutoky
         }
 
 
