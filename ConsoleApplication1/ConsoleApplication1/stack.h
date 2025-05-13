@@ -18,7 +18,7 @@ public:
             return;
         }
         new_node->next = data;// ¬каз≥вник next новоствореного об'Їкту new_node вказуЇ на попередньо створену зм≥нну data(јдресу).                                     
-        data->previous = new_node;
+        data->prev = new_node;
         data = new_node;
     }
 
