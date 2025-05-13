@@ -3,12 +3,16 @@
 #include "Node.h"
 #include "list.h"
 #include "ouble.h"
+#include "queue.h"
+
 
 using namespace std;
 
 int main()
 {
-    list<int> list;
+    queue<int> queue;
+    queue.peek();
+   /* list<int> list;
     list.push_back(15);
     list.push_back(20);
 
@@ -17,6 +21,6 @@ int main()
     cout << list.rozm() << endl;
     cout << list.search(15) << endl;
     cout << list<<endl;
-    cout<< list.ind(2);
+    cout<< list.ind(2);*/
 }
     // для того щоб перегрузити оператор мені потрібно витянути прінт функ і запихнути і тіло перегрузки і порушувати принципиооп використовуючи френд

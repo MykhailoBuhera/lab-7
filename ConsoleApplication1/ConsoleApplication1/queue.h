@@ -23,7 +23,14 @@ class queue
             }
             current->next = new_node;
         }
-      
+        void dequeue() {
+            if (!data) {
+                cout << "Queue is empty" << endl;
+                return;
+            }
+            data = data->next;
+        }
+
 
 };
 
