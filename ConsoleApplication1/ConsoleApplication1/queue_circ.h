@@ -25,13 +25,13 @@ public:
         else {
             rear->next = new_node;
             new_node->prev = rear;
-            new_node->next = front;  // Зв'язуємо з першим елементом
-            front->prev = new_node;  // Зв'язуємо перший елемент з новим
-            rear = new_node;         // Оновлюємо rear
+            new_node->next = front;  // zvyazyyem z start
+            front->prev = new_node;  // zvayazyyemo start z cum elementom
+            rear = new_node;         // update end element
         }
     }
 
-    // Видаляє елемент з початку черги
+    // zaburaye element z pochatky chergu
     void dequeue() {
         if (!front) {
             cout << "Queue is empty" << endl;
@@ -39,18 +39,18 @@ public:
         }
 
         if (front == rear) {
-            // Якщо в черзі тільки один елемент
+            // if only one element we make all null
             front = rear = nullptr;
         }
         else {
-            // Переміщаємо front на наступний елемент
+            // if a lot of elemnts we go to next element and make it first
             front = front->next;
-            rear->next = front;  // Оновлюємо зв'язок з rear
-            front->prev = rear;  // Оновлюємо зв'язок з front
+            rear->next = front;  // update link z start
+            front->prev = rear;  // botk but with end
         }
     }
 
-    // Показує перший елемент
+    // vuvedenya elementy satrt
     void peek() {
         if (!front) {
             cout << "Queue is empty" << endl;
