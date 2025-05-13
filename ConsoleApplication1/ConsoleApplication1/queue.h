@@ -31,6 +31,14 @@ class queue
             data = data->next; //shared ptr sam vudaluti kolu zanylutsa i cherez ce ne byde vutoky
         }
 
+        void peek() {
+            if (!data)
+            {
+                cout << "Queue is empty" << endl;
+                return;
+            }
+            cout << "1st element in the queue: " << data->data << endl;
+        }
 
 };
 
