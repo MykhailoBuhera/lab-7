@@ -19,11 +19,10 @@ public:
 
         if (!front) {
             front = rear = new_node;
-            front->next = front; // pershuy 
-            front->prev = front; // ¬казуЇмо, що останн≥й елемент на себе
+            front->next = front; // pershuy elemnt vkazye sam na sebe
+            front->prev = front; // ostaniy element takoz sam nna sebe
         }
         else {
-            // „ерга не порожн€, додаЇмо новий елемент в к≥нець
             rear->next = new_node;
             new_node->prev = rear;
             new_node->next = front;  // «в'€зуЇмо з першим елементом
