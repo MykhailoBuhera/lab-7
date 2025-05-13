@@ -6,7 +6,7 @@
 using namespace std;
 
 template <typename Type>
-class list {
+class double_linlked_list {
 private:
     shared_ptr<Node<Type>> head;
     shared_ptr<Node<Type>> tail;
@@ -69,7 +69,7 @@ public:
         }
 
         if (!current) {
-            cout << "Index out of bounds\n";
+            cout << "Index out of border\n";
             return;
         }
 
@@ -84,7 +84,7 @@ public:
 
     void erase(int index) {
         if (index < 0 || !head) {
-            cout << "Invalid index or empty list\n";
+            cout << "ne mozhe index bytu menshum null\n";
             return;
         }
 
