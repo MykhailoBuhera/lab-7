@@ -10,33 +10,29 @@ private:
 
 public:
     void push(Type value) {
-        date.push_front(value); // Додаємо елемент на початок списку
+        date.push_front(value); // add element on start of list which is top of stack
     }
 
     void pop() {
-        if (container.empty()) {
+        if (date.empty()) {
             cout << "Stack is empty! Cannot pop." << endl;
             return;
         }
-        date.pop_front(); // Видаляємо перший елемент списку
+        date.pop_front(); // delet first list's odject which is
     }
 
     Type peek() {
-        if (container.empty()) {
+        if (date.empty()) {
             cout << "Stack is empty"<<endl;
         }
-        return date.ind(0); // Повертаємо перший елемент списку
+        return date.ind(0); // return first object
     }
 
     bool empty() {
-        return data.empty();
-    }
-
-    int size() {
-        return container.rozm();
+        return date.empty();
     }
 
     void print() const {
-        container.print();
+        date.print();
     }
 };
